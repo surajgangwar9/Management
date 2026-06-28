@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Information Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>FIMS</h2>
+            <p>Family Information</p>
+        </div>
+
+        <ul>
+
+            <li><a href="#dashboard">🏠 Dashboard</a></li>
+
+            <li><a href="#personal">👤 Personal</a></li>
+
+            <li><a href="#father">👨 Father</a></li>
+
+            <li><a href="#mother">👩 Mother</a></li>
+
+            <li><a href="#family">👨‍👩‍👧 Family</a></li>
+
+            <li><a href="#education">🎓 Education</a></li>
+
+            <li><a href="#job">💼 Occupation</a></li>
+
+            <li><a href="#address">🏠 Address</a></li>
+
+            <li><a href="#bank">🏦 Bank</a></li>
+
+            <li><a href="#documents">📂 Documents</a></li>
+
+            <li><a href="#medical">💊 Medical</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <h1>Family Information Management System</h1>
+
+            <button id="darkBtn">🌙 Dark Mode</button>
+
+        </header>
+
+        <!-- Dashboard -->
+
+        <section id="dashboard" class="card">
+
+            <h2>Dashboard</h2>
+
+            <div class="cards">
+
+                <div class="box">
+                    <h3>Total Members</h3>
+                    <h1 id="memberCount">0</h1>
+                </div>
+
+                <div class="box">
+                    <h3>Education Records</h3>
+                    <h1 id="eduCount">0</h1>
+                </div>
+
+                <div class="box">
+                    <h3>Documents</h3>
+                    <h1 id="docCount">0</h1>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Personal Details -->
+
+        <section id="personal" class="card">
+
+            <h2>Personal Details</h2>
+
+            <div class="grid">
+
+                <input type="text" id="name" placeholder="Full Name">
+
+                <input type="date" id="dob">
+
+                <select id="gender">
+
+                    <option>Male</option>
+
+                    <option>Female</option>
+
+                    <option>Other</option>
+
+                </select>
+
+                <input type="text" id="mobile" placeholder="Mobile Number">
+
+                <input type="email" id="email" placeholder="Email">
+
+                <input type="text" id="aadhaar" placeholder="Aadhaar Number">
+
+                <input type="text" id="pan" placeholder="PAN Number">
+
+                <input type="text" id="occupation" placeholder="Occupation">
+
+                <input type="file" id="photo">
+
+            </div>
+
+        </section>
+
+        <!-- Father Details -->
+
+        <section id="father" class="card">
+
+            <h2>Father Details</h2>
+
+            <div class="grid">
+
+                <input type="text" id="fatherName" placeholder="Father Name">
+
+                <input type="text" id="fatherMobile" placeholder="Mobile">
+
+                <input type="text" id="fatherOccupation" placeholder="Occupation">
+
+                <input type="text" placeholder="Education">
+
+            </div>
+
+        </section>
+
+        <!-- Mother Details -->
+
+        <section id="mother" class="card">
+
+            <h2>Mother Details</h2>
+
+            <div class="grid">
+
+                <input type="text" id="motherName" placeholder="Mother Name">
+
+                <input type="text" id="motherMobile" placeholder="Mobile">
+
+                <input type="text" id="motherOccupation" placeholder="Occupation">
+
+                <input type="text" placeholder="Education">
+
+            </div>
+
+        </section>
+                <!-- Family Details -->
+
+        <section id="family" class="card">
+
+            <h2>Family Members</h2>
+
+            <div class="grid">
+
+                <input type="text" id="spouseName" placeholder="Spouse Name">
+
+                <input type="number" id="childrenCount" placeholder="Number of Children">
+
+                <input type="text" id="brothers" placeholder="Brothers">
+
+                <input type="text" id="sisters" placeholder="Sisters">
+
+                <textarea id="familyNotes" placeholder="Family Information"></textarea>
+
+            </div>
+
+        </section>
+
+        <!-- Education -->
+
+        <section id="education" class="card">
+
+            <h2>Education Details</h2>
+
+            <div class="grid">
+
+                <input type="text" id="class10" placeholder="10th School">
+
+                <input type="text" id="class10Year" placeholder="10th Passing Year">
+
+                <input type="text" id="class12" placeholder="12th School">
+
+                <input type="text" id="class12Year" placeholder="12th Passing Year">
+
+                <input type="text" id="graduation" placeholder="Graduation">
+
+                <input type="text" id="graduationYear" placeholder="Graduation Year">
+
+                <input type="text" id="postGraduation" placeholder="Post Graduation">
+
+                <input type="text" id="postGraduationYear" placeholder="Post Graduation Year">
+
+            </div>
+
+        </section>
+
+        <!-- Job Details -->
+
+        <section id="job" class="card">
+
+            <h2>Occupation Details</h2>
+
+            <div class="grid">
+
+                <input type="text" id="company" placeholder="Company Name">
+
+                <input type="text" id="designation" placeholder="Designation">
+
+                <input type="number" id="salary" placeholder="Monthly Salary">
+
+                <input type="text" id="experience" placeholder="Experience">
+
+            </div>
+
+        </section>
+
+        <!-- Address -->
+
+        <section id="address" class="card">
+
+            <h2>Address Details</h2>
+
+            <textarea id="presentAddress"
+            placeholder="Present Address"></textarea>
+
+            <textarea id="permanentAddress"
+            placeholder="Permanent Address"></textarea>
+
+        </section>
+
+        <!-- Bank Details -->
+
+        <section id="bank" class="card">
+
+            <h2>Bank Details</h2>
+
+            <div class="grid">
+
+                <input type="text" id="bankName" placeholder="Bank Name">
+
+                <input type="text" id="accountNumber" placeholder="Account Number">
+
+                <input type="text" id="ifsc" placeholder="IFSC Code">
+
+                <input type="text" id="branch" placeholder="Branch">
+
+            </div>
+
+        </section>
+
+        <!-- Documents -->
+
+        <section id="documents" class="card">
+
+            <h2>Documents</h2>
+
+            <div class="grid">
+
+                <label>Aadhaar Copy</label>
+                <input type="file" id="aadhaarFile">
+
+                <label>PAN Card</label>
+                <input type="file" id="panFile">
+
+                <label>Voter ID</label>
+                <input type="file" id="voterFile">
+
+                <label>Driving License</label>
+                <input type="file" id="licenseFile">
+
+            </div>
+
+        </section>
+
+        <!-- Medical -->
+
+        <section id="medical" class="card">
+
+            <h2>Medical Details</h2>
+
+            <div class="grid">
+
+                <input type="text" id="bloodGroup" placeholder="Blood Group">
+
+                <input type="text" id="disease" placeholder="Medical Condition">
+
+                <input type="text" id="allergy" placeholder="Allergies">
+
+                <input type="text" id="doctor" placeholder="Family Doctor">
+
+                <input type="text" id="emergencyContact" placeholder="Emergency Contact">
+
+            </div>
+
+        </section>
+
+        <!-- Buttons -->
+
+        <section class="card">
+
+            <button onclick="saveData()">💾 Save</button>
+
+            <button onclick="searchData()">🔍 Search</button>
+
+            <button onclick="updateData()">✏️ Update</button>
+
+            <button onclick="deleteData()">🗑 Delete</button>
+
+            <button onclick="window.print()">🖨 Print</button>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
+<section class="card">
+
+    <h2>📋 Saved Records</h2>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by Name or Mobile..."
+        onkeyup="filterRecords()"
+    >
+
+    <br><br>
+
+    <table id="recordTable">
+
+        <thead>
+
+            <tr>
+
+                <th>#</th>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Occupation</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="recordBody">
+
+        </tbody>
+
+    </table>
+
+</section>
